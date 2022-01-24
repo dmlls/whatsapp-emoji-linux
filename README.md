@@ -1,4 +1,4 @@
-<p align="center"><img width="500" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/emoji-showcase.png" alt="WhatsApp Emojis for Linux"></p>
+<p align="center"><img src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/emoji-showcase.png" alt="WhatsApp Emojis for Linux"></p>
 
 <h1 align="center">WhatsApp Emojis for GNU/Linux</h1>
 <p align="center">The freshest 3540 WhatsApp emojis to color up our favorite OS.</p>
@@ -8,8 +8,19 @@
 
 <h2>Installing <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/installing.png" alt="Installing"></h2>
 
-### [Download font](https://github.com/dmlls/whatsapp-emoji-linux/releases/download/latest/WhatsAppEmoji.ttf)
+<h3><a href="https://github.com/dmlls/whatsapp-emoji-linux/releases/download/latest/WhatsAppEmoji.ttf">Download font</a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="https://aur.archlinux.org/packages/ttf-whatsapp-emoji/">Available on AUR <img width="25" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/arch-linux.png" alt="Arch Linux AUR"></a></h3>
 <br/>
+
+### Before installing...
+**WhatsAppEmoji will conflict with the following fonts:**
+- [Noto Emoji](https://github.com/googlefonts/noto-emoji)
+- [Symbola](https://dn-works.com/ufas/)
+- [JoyPixel](https://www.joypixels.com/)
+- [Twitter Color Emoji](https://github.com/eosrei/twemoji-color-font)
+- [Apple Color Emoji](https://aur.archlinux.org/packages/ttf-apple-emoji)
+
+**Make sure these fonts are not installed, and if so, uninstall them first.**
+<br/><br/>
 
 ### Option 1: Install for current user
 
@@ -43,7 +54,7 @@ Building WhatsAppEmoji requires:
 Once the packages listed in pre-requisites are installed, you can install the Python dependencies listed under [`requirements.txt`](https://github.com/dmlls/whatsapp-emoji-linux/blob/main/requirements.txt). It is highly recommended that you install the dependencies in a virtual environment:
 
 ```shell
-# Make sure you the pre-requisites are installed
+# Make sure the pre-requisites are installed
 
 # Create & activate a virtual environment
 python3 -m venv venv
@@ -79,7 +90,7 @@ You will need to restart any open program for the installed font to be displayed
 
 <br/><br/>
 
-<h2>Credits <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/credits.png" alt="Credits"></h2>
+<h2>Credits <img width="25" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/credits.png" alt="Credits"></h2>
 
 - Noto Emoji: https://github.com/googlei18n/noto-emoji
 - Noto Tools: https://github.com/googlei18n/nototools
