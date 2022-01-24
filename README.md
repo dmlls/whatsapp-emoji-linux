@@ -1,15 +1,34 @@
 <p align="center"><img width="500" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/emoji-showcase.png" alt="WhatsApp Emojis for Linux"></p>
 
 <h1 align="center">WhatsApp Emojis for GNU/Linux</h1>
-<p align="center">The freshest 3552 WhatsApp emojis to color up your favorite OS.</p>
+<p align="center">The freshest 3540 WhatsApp emojis to color up our favorite OS.</p>
+
+<p align="center"><a href="https://github.com/dmlls/whatsapp-emoji-linux/releases/tag/latest"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/dmlls/whatsapp-emoji-linux?color=%233ea54a&display_name=release&label=WhatsApp%20Version"></a></p>
 <br/>
 
-## Download
-TODO
+<h2>Installing <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/installing.png" alt="Installing"></h2>
 
----
+### [Download font](https://github.com/dmlls/whatsapp-emoji-linux/releases/download/latest/WhatsAppEmoji.ttf)
+<br/>
 
-## Build
+### Option 1: Install for current user
+
+To install the font only for you, copy the .ttf file to `~/.local/share/fonts/`, e.g.:
+```shell
+cp WhatsAppEmoji.ttf ~/.local/share/fonts/
+```
+
+
+### Option 2: System-wide installation
+
+To install the font for all the users, copy the .ttf file to `cd /usr/share/fonts/TTF/`, e.g.:
+```shell
+sudo cp WhatsAppEmoji.ttf /usr/share/fonts/TTF/
+```
+
+<br/><br/>
+
+<h2>Building <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/building.png" alt="Building"></h2>
 
 ### Pre-requisites
 
@@ -35,6 +54,7 @@ pip install -r requirements.txt
 ```
 
 ### Build
+
 Once all the dependencies are installed, you can build the font:
 
 ```shell
@@ -43,6 +63,7 @@ time make -j
 This will create a directory `build` with the processed emojis. You will find the compiled font `WhatsAppEmoji.ttf` in the root directory.
 
 ### Install
+
 To automatically install the font in your system, run:
 
 ```shell
@@ -56,16 +77,18 @@ fc-cache -f -v
 
 You will need to restart any open program for the installed font to be displayed.
 
----
+<br/><br/>
 
-## Credits
+<h2>Credits <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/credits.png" alt="Credits"></h2>
+
 - Noto Emoji: https://github.com/googlei18n/noto-emoji
 - Noto Tools: https://github.com/googlei18n/nototools
 - Apple Emoji Linux: https://github.com/samuelngs/apple-emoji-linux
 
----
+<br/><br/>
 
-## Disclaimer
+<h2>Disclaimer <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/disclaimer.png" alt="Disclaimer"></h2>
+
 The emoji images provided are for educational purposes only. WhatsApp is a Trademark of WhatsApp LLC, registered in the U.S. and/or other countries. According to [Emojipedia](https://emojipedia.org/licensing/):
 
 > To the best of our knowledge, specific information about licensing emojis from Apple, Facebook, WhatsApp or Samsung is not publicly available.
