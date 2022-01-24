@@ -1,0 +1,31 @@
+name: Build WhatsAppEmoji
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install --yes zopfli pngquant
+        python -m pip install --upgrade pip
+        python -m pip install -r https://raw.githubusercontent.com/dmlls/whatsapp-emoji-linux/main/requirements.txt
+    - name: Build WhatsAppEmoji
+      run: |
+        make -j
+        make install
+    - name: Find output
+      run: |
+        find . -name "WhatsAppEmoji.ttf" -ls
