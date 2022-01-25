@@ -26,6 +26,8 @@ jobs:
       run: |
         make -j
         make install
-    - name: Find output
-      run: |
-        find . -name "WhatsAppEmoji.ttf" -ls
+    - name: Upload .ttf file
+      uses: actions/upload-artifact@v2
+      with:
+        name: WhatsAppEmoji
+        path: WhatsAppEmoji.ttf
