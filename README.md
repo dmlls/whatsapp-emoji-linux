@@ -17,7 +17,7 @@
 - [Symbola](https://dn-works.com/ufas/)
 - [JoyPixel](https://www.joypixels.com/)
 - [Twitter Color Emoji](https://github.com/eosrei/twemoji-color-font)
-- [Apple Color Emoji](https://aur.archlinux.org/packages/ttf-apple-emoji)
+- [Apple Color Emoji](https://github.com/samuelngs/apple-emoji-linux)
 
 **Make sure these fonts are not installed, and if so, uninstall them first.**
 <br/><br/>
@@ -100,6 +100,4 @@ You will need to restart any open program for the installed font to be displayed
 
 <h2>Disclaimer <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/disclaimer.png" alt="Disclaimer"></h2>
 
-The emoji images provided are for educational purposes only. WhatsApp is a Trademark of WhatsApp LLC, registered in the U.S. and/or other countries. According to [Emojipedia](https://emojipedia.org/licensing/):
-
-> To the best of our knowledge, specific information about licensing emojis from Apple, Facebook, WhatsApp or Samsung is not publicly available.
+The emoji images included in this repository belong to WhatsApp. WhatsApp is a Trademark of WhatsApp LLC, registered in the U.S. and/or other countries. These images are provided for non-commercial, educational purposes only. Its use is solely transformative, i.e., intended with a further purpose or different character, and do not substitute under any circumstance for the original use of the work.
