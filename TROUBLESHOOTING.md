@@ -11,7 +11,7 @@ A way to solve this can be the following. First, ensure that the necessary
 directories exist with `mkdir -p ~/.config/fontconfig/conf.d`. Then, create the
 file `~/.config/fontconfig/conf.d/01-emoji.conf` with the following content:
 
-```shell
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
