@@ -8,7 +8,7 @@
 
 <h2>Installing <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/installing.png" alt="Installing"></h2>
 
-<h3><a href="https://github.com/dmlls/whatsapp-emoji-linux/releases/download/latest/WhatsAppEmoji.ttf">Download font</a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="https://aur.archlinux.org/packages/ttf-whatsapp-emoji/">Available on AUR <img width="25" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/arch-linux.png" alt="Arch Linux AUR"></a></h3>
+<h3><a href="https://github.com/dmlls/whatsapp-emoji-linux/releases/download/latest/WhatsAppEmoji.ttf">Download font</a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="https://aur.archlinux.org/packages/ttf-whatsapp-emoji/">Available on <img width="21" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/arch-linux.png" alt="Arch Linux AUR">AUR</a></h3>
 <br/>
 
 ### Before installing...
@@ -36,6 +36,11 @@ To install the font for all the users, copy the .ttf file to `cd /usr/share/font
 ```shell
 sudo cp WhatsAppEmoji.ttf /usr/share/fonts/TTF/
 ```
+<br/><br/>
+
+<h2>Troubleshooting <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/troubleshooting.png" alt="Building"></h2>
+
+- [Non-color emojis being displayed in some apps](https://github.com/dmlls/whatsapp-emoji-linux/blob/main/TROUBLESHOOTING.md#non-color-emojis-being-displayed-in-some-apps).
 
 <br/><br/>
 
