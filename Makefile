@@ -48,9 +48,8 @@ ADD_GLYPHS_FLAGS = -a $(NOTO_EMOJI_SRC_DIR)/emoji_aliases.txt
 PUA_ADDER = $(NOTO_EMOJI_SRC_DIR)/map_pua_emoji.py
 VS_ADDER = add_vs_cmap.py # from nototools
 
-
 EMOJI_NAMES = $(notdir $(wildcard $(EMOJI_SRC_DIR)/emoji_u*.png))
-EMOJI_FILES= $(addprefix $(EMOJI_DIR)/,$(EMOJI_NAMES)))
+EMOJI_FILES = $(addprefix $(EMOJI_DIR)/,$(EMOJI_NAMES))
 
 ALL_NAMES = $(EMOJI_NAMES)
 
@@ -85,10 +84,8 @@ ifdef MISSING_ADDER
 	$(error "$(VS_ADDER) not in path, run setup.py in nototools")
 endif
 
-
 $(EMOJI_DIR) $(QUANTIZED_DIR) $(COMPRESSED_DIR):
 	mkdir -p "$@"
-
 
 # imagemagick's -extent operator munges the grayscale images in such a fashion
 # that while it can display them correctly using libpng12, chrome and gimp using
@@ -118,10 +115,10 @@ $(COMPRESSED_DIR)/%.png: $(QUANTIZED_DIR)/%.png | check_compress_tool $(COMPRESS
 # ...
 # Run make without -j if this happens.
 
-%.ttx: $(RES_DIR)/%.ttx.tmpl $(ADD_GLYPHS) $(ALL_COMPRESSED_FILES)
-	@$(PYTHON) $(ADD_GLYPHS) -f "$<" -o "$@" -d "$(COMPRESSED_DIR)" $(ADD_GLYPHS_FLAGS)
+$(RES_DIR)/$(EMOJI).tmpl.ttx: $(RES_DIR)/$(EMOJI).tmpl.ttx.tmpl $(ADD_GLYPHS) $(ALL_COMPRESSED_FILES)
+	$(PYTHON) $(ADD_GLYPHS) -f "$<" -o "$@" -d "$(COMPRESSED_DIR)" $(ADD_GLYPHS_FLAGS)
 
-%.ttf: $(RES_DIR)/%.ttx
+$(RES_DIR)/%.ttf: $(RES_DIR)/%.ttx
 	@rm -f "$@"
 	ttx "$<"
 
@@ -138,7 +135,7 @@ install:
 	cp -f $(EMOJI).ttf $(PREFIX)/share/fonts/
 
 clean:
-	rm -f $(EMOJI).ttf
+	rm -f $(EMOJI).ttf $(RES_DIR)/$(EMOJI).tmpl.ttf $(RES_DIR)/$(EMOJI).tmpl.ttx
 	rm -rf $(BUILD_DIR)
 
 .SECONDARY: $(EMOJI_FILES) $(ALL_QUANTIZED_FILES) $(ALL_COMPRESSED_FILES)
