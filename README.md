@@ -71,7 +71,10 @@ Once all the dependencies are installed, you can build the font:
 ```shell
 time make -j
 ```
-This will create a directory `build` with the processed emojis. You will find the compiled font `WhatsAppEmoji.ttf` in the root directory.
+
+This will create a directory `build` with the processed emojis and the compiled font `WhatsAppEmoji.ttf`.
+
+Bear in mind that building the font will take several miutes.
 
 ### Install
 

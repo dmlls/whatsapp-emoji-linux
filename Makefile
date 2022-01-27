@@ -33,7 +33,7 @@ ZOPFLIPNG = zopflipng
 EMOJI_SRC_DIR ?= png/160
 NOTO_EMOJI_SRC_DIR ?= third_party/noto_emoji
 COLOR_EMOJI_SRC_DIR ?= third_party/color_emoji
-RES_DIR ?= res/
+ASSETS_DIR ?= assets/
 
 BUILD_DIR := build
 EMOJI_DIR := $(BUILD_DIR)/emoji
@@ -115,27 +115,28 @@ $(COMPRESSED_DIR)/%.png: $(QUANTIZED_DIR)/%.png | check_compress_tool $(COMPRESS
 # ...
 # Run make without -j if this happens.
 
-$(RES_DIR)/$(EMOJI).tmpl.ttx: $(RES_DIR)/$(EMOJI).tmpl.ttx.tmpl $(ADD_GLYPHS) $(ALL_COMPRESSED_FILES)
+$(ASSETS_DIR)/$(EMOJI).tmpl.ttx: $(ASSETS_DIR)/$(EMOJI).tmpl.ttx.tmpl $(ADD_GLYPHS) $(ALL_COMPRESSED_FILES)
 	$(PYTHON) $(ADD_GLYPHS) -f "$<" -o "$@" -d "$(COMPRESSED_DIR)" $(ADD_GLYPHS_FLAGS)
 
-$(RES_DIR)/%.ttf: $(RES_DIR)/%.ttx
+$(ASSETS_DIR)/%.ttf: $(ASSETS_DIR)/%.ttx
 	@rm -f "$@"
 	ttx "$<"
 
-$(EMOJI).ttf: $(RES_DIR)/$(EMOJI).tmpl.ttf $(EMOJI_BUILDER) $(PUA_ADDER) \
+$(EMOJI).ttf: $(ASSETS_DIR)/$(EMOJI).tmpl.ttf $(EMOJI_BUILDER) $(PUA_ADDER) \
 	$(ALL_COMPRESSED_FILES) | check_vs_adder
 	@$(PYTHON) $(EMOJI_BUILDER) $(SMALL_METRICS) -V $< "$@" "$(COMPRESSED_DIR)/emoji_u"
 	@$(PYTHON) $(PUA_ADDER) "$@" "$@-with-pua"
 	@$(VS_ADDER) -vs 2640 2642 2695 --dstdir '.' -o "$@-with-pua-varsel" "$@-with-pua"
 	@mv "$@-with-pua-varsel" "$@"
 	@rm "$@-with-pua"
+	@mv $(EMOJI).ttf $(BUILD_DIR)/
 
 install:
 	mkdir -p $(PREFIX)/share/fonts
-	cp -f $(EMOJI).ttf $(PREFIX)/share/fonts/
+	cp -f $(BUILD_DIR)/$(EMOJI).ttf $(PREFIX)/share/fonts/
 
 clean:
-	rm -f $(EMOJI).ttf $(RES_DIR)/$(EMOJI).tmpl.ttf $(RES_DIR)/$(EMOJI).tmpl.ttx
+	rm -f $(ASSETS_DIR)/$(EMOJI).tmpl.ttf $(ASSETS_DIR)/$(EMOJI).tmpl.ttx
 	rm -rf $(BUILD_DIR)
 
 .SECONDARY: $(EMOJI_FILES) $(ALL_QUANTIZED_FILES) $(ALL_COMPRESSED_FILES)
