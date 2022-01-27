@@ -3,7 +3,7 @@
 <h1 align="center">WhatsApp Emojis for GNU/Linux</h1>
 <p align="center">The freshest 3540 WhatsApp emojis to color up our favorite OS.</p>
 
-<p align="center"><a href="https://github.com/dmlls/whatsapp-emoji-linux/releases/tag/latest"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/dmlls/whatsapp-emoji-linux?color=%233ea54a&display_name=release&label=WhatsApp%20Version"></a></p>
+<p align="center"><a href="https://github.com/dmlls/whatsapp-emoji-linux/releases/tag/latest"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/dmlls/whatsapp-emoji-linux?color=%230cc96d&display_name=release&label=WhatsApp%20Version"></a></p>
 <br/>
 
 <h2>Installing <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/installing.png" alt="Installing"></h2>
