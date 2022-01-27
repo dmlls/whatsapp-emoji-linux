@@ -18,23 +18,24 @@ file `~/.config/fontconfig/conf.d/01-emoji.conf` with the following content:
   <alias>
     <family>serif</family>
     <prefer>
-      <family>WhatsApp Emoji</family>
+      <family>Apple Color Emoji</family>
     </prefer>
   </alias>
   <alias>
     <family>sans-serif</family>
     <prefer>
-      <family>WhatsApp Emoji</family>
+      <family>Apple Color Emoji</family>
     </prefer>
   </alias>
   <alias>
     <family>monospace</family>
     <prefer>
-      <family>WhatsApp Emoji</family>
+      <family>Apple Color Emoji</family>
     </prefer>
   </alias>
 </fontconfig>
 ```
+([Why Apple Color Emoji?](https://github.com/dmlls/whatsapp-emoji-linux/issues/1))
 
 Save the file and refresh the font cache with `fc-cache -f -v`. Don't forget to
-reopen any opened programs for changes to take effect.
+reopen any previously opened programs so that changes take effect.
