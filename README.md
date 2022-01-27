@@ -36,6 +36,17 @@ To install the font for all the users, copy the .ttf file to `cd /usr/share/font
 ```shell
 sudo cp WhatsAppEmoji.ttf /usr/share/fonts/TTF/
 ```
+
+<br/>
+
+### After installing...
+
+Don't forget to rebuild the system font cache with:
+```shell
+fc-cache -f -v
+```
+Finally, you will have restart any open program in order for the installation to take effect.
+
 <br/><br/>
 
 <h2>Troubleshooting <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/troubleshooting.png" alt="Building"></h2>
