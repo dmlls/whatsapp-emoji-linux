@@ -64,6 +64,7 @@ Building WhatsAppEmoji requires:
 - [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
 - [pngquant](https://pngquant.org/)
 - [zopflipng](https://github.com/google/zopfli)
+- [ImageMagick](https://imagemagick.org/)
 
 ### Installing Python packages
 
