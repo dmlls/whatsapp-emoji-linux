@@ -49,9 +49,19 @@ Finally, you will have restart any open program in order for the installation to
 
 <br/><br/>
 
-<h2>Troubleshooting <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/troubleshooting.png" alt="Building"></h2>
+<h2>Troubleshooting and FAQs <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/troubleshooting.png" alt="Building"></h2>
 
-- [Non-color emojis being displayed in some apps](https://github.com/dmlls/whatsapp-emoji-linux/blob/main/TROUBLESHOOTING.md#non-color-emojis-being-displayed-in-some-apps).
+<details>
+  <summary><b>Non-color emojis are being displayed in some apps.</b></summary>
+  <br/>
+  <p>Please, refer to the <a href="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/TROUBLESHOOTING.md#non-color-emojis-being-displayed-in-some-apps">troubleshooting guide</a>.</p>
+  <br/>
+</details>
+
+<details>
+  <summary><b>Can I install the emoji on Android?</b></summary>
+  <p><br>TODO.</p>
+</details>
 
 <br/><br/>
 
