@@ -59,8 +59,13 @@ Finally, you will have restart any open program in order for the installation to
 </details>
 
 <details>
-  <summary><b>Can I install the emoji on Android?</b></summary>
-  <p><br>TODO.</p>
+  <summary><b>Can I install the emoji on Android?</b></p></summary>
+
+To install WhatsApp emoji on Android, you will need to replace your system font file currently in use, requiring root access.
+
+In most cases the system font would be NotoColorEmoji.ttf, you can find it in `/system/fonts/` using your choice of root File Manager, such as MiXplorer, take note of its assigned permissions.
+
+Rename WhatsAppEmoji.ttf to NotoColorEmoji.ttf and copy it to `/system/fonts/` overwriting the existing file. Change the permissions to that of the original's (644), reboot your phone and you should now have WhatsApp emoji's as your system default.
 </details>
 
 <br/><br/>
