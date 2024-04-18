@@ -1,2 +1,2 @@
-fonttools>=4.28.5
-notofonttools>=0.2.16
+fonttools>=4.51.0
+notofonttools>=0.2.19
