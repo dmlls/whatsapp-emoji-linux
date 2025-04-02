@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  PYTHON_VERSION: "3.10"
+  PYTHON_VERSION: "3.13"
 
 jobs:
   build:
@@ -15,17 +15,17 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v4 # https://github.com/actions/checkout
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5 # https://github.com/actions/setup-python
       with:
         python-version: ${{ env.PYTHON_VERSION }}
 
     - name: Install dependencies
       run: |
-        sudo apt-get update
-        sudo apt-get install --yes zopfli pngquant
+        sudo apt update
+        sudo apt install --yes zopfli pngquant imagemagick
         python -m pip install --upgrade pip
         python -m pip install -r requirements.txt
 
@@ -35,7 +35,7 @@ jobs:
         make install
 
     - name: Upload .ttf file
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v4 # https://github.com/actions/upload-artifact
       with:
         name: WhatsAppEmoji
         path: build/WhatsAppEmoji.ttf
