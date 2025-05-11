@@ -1,14 +1,14 @@
 <p align="center"><img src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/emoji-showcase.png" alt="WhatsApp Emojis for Linux"></p>
 
 <h1 align="center">WhatsApp Emoji for GNU/Linux</h1>
-<p align="center">The freshest 3,480 WhatsApp emoji to color up our favorite OS</p>
+<p align="center">The freshest 3,710 WhatsApp emoji to color up our favorite OS</p>
 
-<p align="center"><a href="https://github.com/dmlls/whatsapp-emoji-linux/releases/tag/2.23.2.72-1"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/dmlls/whatsapp-emoji-linux?color=%2310ba67&label=WhatsApp%20Version"></a></p>
+<p align="center"><a href="https://github.com/dmlls/whatsapp-emoji-linux/releases/latest"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/dmlls/whatsapp-emoji-linux?color=%2310ba67&label=WhatsApp%20Version"></a></p>
 <br/>
 
 <h2>Installing <img width="22" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/installing.png" alt="Installing"></h2>
 
-<h3><a href="https://github.com/dmlls/whatsapp-emoji-linux/releases/download/2.23.2.72-1/WhatsAppEmoji.ttf">Download font</a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="https://aur.archlinux.org/packages/ttf-whatsapp-emoji/">Available on <img width="21" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/arch-linux.png" alt="Arch Linux AUR">AUR</a></h3>
+<h3><a href="https://github.com/dmlls/whatsapp-emoji-linux/releases/latest/download/WhatsAppEmoji.ttf">Download font</a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="https://aur.archlinux.org/packages/ttf-whatsapp-emoji/">Available on <img width="21" src="https://github.com/dmlls/whatsapp-emoji-linux/blob/main/img/readme/arch-linux.png" alt="Arch Linux AUR">AUR</a></h3>
 <br/>
 
 ### Before installing...
